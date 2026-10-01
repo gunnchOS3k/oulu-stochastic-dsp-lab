@@ -1,64 +1,58 @@
 {
   "schema": "gunnchos.surfacekit.v2",
   "measured_topology": false,
-  "diagram_note": "Reading aid built from repository headings. It is not a measured topology and it is not a live system.",
+  "diagram_note": "Educational DSP code in src/oulu_dsp. The only result text is results/experiment_summary.md. This is not a measured spectrum.",
   "nodes": [
     {
-      "id": "overview",
-      "label": "Overview"
+      "id": "matched",
+      "label": "Matched filter"
     },
     {
-      "id": "what-this-is",
-      "label": "What this is"
+      "id": "ofdm",
+      "label": "OFDM symbol"
     },
     {
-      "id": "why-oulu-wce-cares",
-      "label": "Why Oulu WCE cares"
-    },
-    {
-      "id": "beginner-mental-model",
-      "label": "Beginner mental model"
+      "id": "kalman",
+      "label": "Kalman filter"
     }
   ],
   "rows": [
     {
-      "source": "README.md",
-      "scenario_id": "Overview",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "# Oulu WCE Stochastic & DSP Lab"
+      "source": "src/oulu_dsp/matched_filter.py",
+      "scenario_id": "Matched filter",
+      "evidence_class": "educational_code",
+      "ethical_framing": "matched_filter returns np.correlate(rx, template, mode='same').",
+      "implementation": "np.correlate mode=same"
     },
     {
-      "source": "README.md",
-      "scenario_id": "What this is",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "Research and teaching lab for **University of Oulu Wireless Communications Engineering (WCE)**-aligned skills \u2014 built as an independent portfolio project."
+      "source": "src/oulu_dsp/ofdm.py",
+      "scenario_id": "OFDM modulator",
+      "evidence_class": "educational_code",
+      "ethical_framing": "ofdm_mod maps bits to 2*bit-1 and returns ifft with n_sub default 64.",
+      "n_sub_default": "64"
     },
     {
-      "source": "README.md",
-      "scenario_id": "Why Oulu WCE cares",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "Core DSP and stochastic processes for wireless receivers and OFDM."
+      "source": "src/oulu_dsp/kalman_filter.py",
+      "scenario_id": "Kalman 1D",
+      "evidence_class": "educational_code",
+      "ethical_framing": "kalman_1d defaults are q 0.01 and r 0.1. No filtered trace is stored in results.",
+      "q_default": "0.01",
+      "r_default": "0.1"
     },
     {
-      "source": "README.md",
-      "scenario_id": "Beginner mental model",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "Start with `docs/learning_notes.md`, run `make e2e`, open `results/figures/`."
-    },
-    {
-      "source": "README.md",
-      "scenario_id": "Research question",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "See `paper/draft.md`."
-    },
-    {
-      "source": "README.md",
-      "scenario_id": "Commands",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "make install && make test && make e2e"
+      "source": "results/experiment_summary.md",
+      "scenario_id": "Experiment summary",
+      "evidence_class": "repo_result_text",
+      "ethical_framing": "# DSP experiments  Matched filter + OFDM smoke PASS",
+      "summary_text": "# DSP experiments  Matched filter + OFDM smoke PASS"
     }
   ],
-  "sources": [],
+  "sources": [
+    "src/oulu_dsp/matched_filter.py",
+    "src/oulu_dsp/ofdm.py",
+    "src/oulu_dsp/kalman_filter.py",
+    "results/experiment_summary.md"
+  ],
   "sections": [
     {
       "id": "overview",
@@ -101,7 +95,7 @@
     "docs/diagrams/README.md",
     "docs/learning_notes.md"
   ],
-  "methods": "",
+  "methods": "Methods are the educational functions in src/oulu_dsp: matched_filter, ofdm_mod, and kalman_1d. # DSP experiments  Matched filter + OFDM smoke PASS No measured spectrum or field recording is stored beside that smoke line.",
   "cards": [],
   "runtime_mode": "PRECOMPUTED",
   "runtime_boot": false
