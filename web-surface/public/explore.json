@@ -1,0 +1,108 @@
+{
+  "schema": "gunnchos.surfacekit.v2",
+  "measured_topology": false,
+  "diagram_note": "Reading aid built from repository headings. It is not a measured topology and it is not a live system.",
+  "nodes": [
+    {
+      "id": "overview",
+      "label": "Overview"
+    },
+    {
+      "id": "what-this-is",
+      "label": "What this is"
+    },
+    {
+      "id": "why-oulu-wce-cares",
+      "label": "Why Oulu WCE cares"
+    },
+    {
+      "id": "beginner-mental-model",
+      "label": "Beginner mental model"
+    }
+  ],
+  "rows": [
+    {
+      "source": "README.md",
+      "scenario_id": "Overview",
+      "site_id": "Oulu preparation",
+      "ethical_framing": "# Oulu WCE Stochastic & DSP Lab"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What this is",
+      "site_id": "Oulu preparation",
+      "ethical_framing": "Research and teaching lab for **University of Oulu Wireless Communications Engineering (WCE)**-aligned skills \u2014 built as an independent portfolio project."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "Why Oulu WCE cares",
+      "site_id": "Oulu preparation",
+      "ethical_framing": "Core DSP and stochastic processes for wireless receivers and OFDM."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "Beginner mental model",
+      "site_id": "Oulu preparation",
+      "ethical_framing": "Start with `docs/learning_notes.md`, run `make e2e`, open `results/figures/`."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "Research question",
+      "site_id": "Oulu preparation",
+      "ethical_framing": "See `paper/draft.md`."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "Commands",
+      "site_id": "Oulu preparation",
+      "ethical_framing": "make install && make test && make e2e"
+    }
+  ],
+  "sources": [],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "body": "# Oulu WCE Stochastic & DSP Lab"
+    },
+    {
+      "id": "what-this-is",
+      "title": "What this is",
+      "body": "Research and teaching lab for **University of Oulu Wireless Communications Engineering (WCE)**-aligned skills \u2014 built as an independent portfolio project."
+    },
+    {
+      "id": "why-oulu-wce-cares",
+      "title": "Why Oulu WCE cares",
+      "body": "Core DSP and stochastic processes for wireless receivers and OFDM."
+    },
+    {
+      "id": "beginner-mental-model",
+      "title": "Beginner mental model",
+      "body": "Start with `docs/learning_notes.md`, run `make e2e`, open `results/figures/`."
+    },
+    {
+      "id": "research-question",
+      "title": "Research question",
+      "body": "See `paper/draft.md`."
+    },
+    {
+      "id": "commands",
+      "title": "Commands",
+      "body": "make install && make test && make e2e"
+    }
+  ],
+  "artifacts": [
+    "results/experiment_summary.md",
+    "results/figures/dsp_waveforms.png",
+    "paper/draft.md",
+    "paper/experiments.md",
+    "paper/figures_needed.md",
+    "docs/PORTFOLIO_LINKS.md",
+    "docs/diagrams/README.md",
+    "docs/learning_notes.md"
+  ],
+  "methods": "",
+  "cards": [],
+  "runtime_mode": "PRECOMPUTED",
+  "runtime_boot": false
+}
