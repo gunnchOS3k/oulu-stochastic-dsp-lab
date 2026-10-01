@@ -1,0 +1,20 @@
+{
+  "repo": "oulu-stochastic-dsp-lab",
+  "productName": "Stochastic DSP preparation lab",
+  "family": "Oulu preparation",
+  "classification": "STATIC_RESEARCH_SURFACE_WORKER",
+  "acceptedSha": "d9ac99ea98dc9910fdb68fa0ac983045375ac690",
+  "status": "STAGING_WORKER",
+  "summary": "Independent portfolio lab aligned with wireless DSP preparation. Not an Oulu University program.",
+  "capabilities": [
+    "Read the preparation scope",
+    "Open the source repository"
+  ],
+  "limitations": [
+    "No Oulu affiliation, enrollment, or endorsement is claimed"
+  ],
+  "sourceUrl": "https://github.com/gunnchOS3k/oulu-stochastic-dsp-lab",
+  "returnUrlEnv": "GUNNCHOS_PORTAL_URL",
+  "returnUrl": "https://gunnchos-site.gunnchos-finds.workers.dev",
+  "workerName": "gunnchos-oulu-dsp"
+}
